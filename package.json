@@ -25,12 +25,18 @@
   "devDependencies": {
     "jasmine-node": "1.14.x",
     "frisby": "0.8.x",
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-nodeunit": "~0.3.3",
-    "grunt-contrib-uglify": "~0.4.0"
+    "gulp": "3.8.x",
+    "gulp-jshint": "1.8.x",
+    "gulp-concat": "2.4.x",
+    "gulp-rename": "1.2.x",
+    "gulp-uglify": "1.0.x",
+    "jshint-stylish": "0.4.x",
+    "gulp-ignore": "1.2.x",
+    "gulp-clean": "0.3.x",
+    "gulp-nodemon": "1.0.x",
+    "gulp-zip": "2.0.x"
   },
   "scripts": {
-    "test": "./test.sh"
+    "test": "gulp test"
   }
 }

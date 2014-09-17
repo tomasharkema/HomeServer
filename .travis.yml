@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- '0.10'
+notifications:
+  email:
+  - tomas.harkema.1994@gmail.com
+services:
+- mongodb
+
+before_deploy:
+- gulp deploy
+
+deploy:
+  provider: releases
+  api_key:
+    secure: a5NZjuh3Ya6eYmSjYS47CWa82npJS4FXWcjed9Eog19/YF+2Bx9sNjYTsUfS4fBW2qtb1i4PT4yjt1NPpLgMlio1qpOREj8B6sSRVaLhQMZBWi6u+Wvx1DPL/FFsKtoON8OObtzieL5zSx+idiV2RLggEvUR0g7vZNrblaQKHeo=
+  file: dist/release.zip
+  on:
+    tags: true
+    all_branches: true
