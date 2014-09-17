@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-	- "0.10"
+  - "0.10"
 
 notifications:
-	email:
-		- tomas.harkema.1994@gmail.com
+  email:
+    - tomas.harkema.1994@gmail.com
 
 services:
-	- mongodb
+  - mongodb
