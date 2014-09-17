@@ -1,0 +1,108 @@
+{
+    "switches": [{
+        "id": 1,
+        "name": "Spots",
+        "brand": "elro",
+        "code": 31,
+        "switch": "C",
+        "icon": "glyphicon glyphicon-off",
+        "state": 0
+    }, {
+        "id": 5,
+        "name": "Lampjes",
+        "brand": "action",
+        "code": 21,
+        "switch": "A",
+        "icon": "glyphicon glyphicon-off",
+        "state": 0
+    }, {
+        "id": 2,
+        "name": "TV",
+        "brand": "elro",
+        "code": 31,
+        "switch": "A",
+        "icon": "glyphicon glyphicon-off",
+        "state": 0
+    }, {
+        "id": 3,
+        "name": "Muziek",
+        "brand": "elro",
+        "code": 31,
+        "switch": "D",
+        "icon": "glyphicon glyphicon-off",
+        "state": 0
+    }, {
+        "id": 4,
+        "name": "PC",
+        "brand": "elro",
+        "code": 31,
+        "switch": "B",
+        "icon": "glyphicon glyphicon-off",
+        "state": 0
+    }],
+    "devices": [{
+        "id": 6,
+        "name": "PC",
+        "ip": "192.168.0.22",
+        "icon": "glyphicon glyphicon-hdd",
+        "state": 0,
+        "onSwitchOff": "flipSwitch(4, 0, function(){});"
+    }, {
+        "id": 7,
+        "name": "PI",
+        "ip": "192.168.0.101",
+        "icon": "glyphicon glyphicon-flash",
+        "state": 0
+    }, {
+        "id": 8,
+        "name": "iPhone",
+        "ip": "192.168.0.10",
+        "icon": "glyphicon glyphicon-phone",
+        "state": 0
+    }, {
+        "id": 9,
+        "name": "MacBook",
+        "ip": "192.168.0.14",
+        "icon": "glyphicon glyphicon-hdd",
+        "state": 0
+    }, {
+        "id": 10,
+        "name": "iPad",
+        "ip": "192.168.0.15",
+        "icon": "glyphicon glyphicon-phone",
+        "state": 0
+    }, {
+        "id": 11,
+        "name": "Router Zolder",
+        "ip": "192.168.0.102",
+        "icon": "glyphicon glyphicon-phone",
+        "state": 0
+    }, {
+        "id": 12,
+        "name": "Printer",
+        "ip": "192.168.0.20",
+        "icon": "glyphicon glyphicon-phone",
+        "state": 0
+    }],
+    "PIR": {
+        "onDetectYes": [{
+            "type": "switch",
+            "switch": 1,
+            "to": 1,
+            "delay": 1,
+            "light": true,
+            "less": 6
+        }, {
+            "type": "alarm",
+            "message": "ALARM! AN INTRUDER DETECTED!!!"
+        }],
+        "onDetectNo": [{
+            "type": "switch",
+            "switch": 1,
+            "to": 0,
+            "delay": 0,
+            "light": true,
+            "less": 6
+        }]
+    }
+}

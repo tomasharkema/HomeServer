@@ -1,0 +1,12 @@
+./server.py:248: SyntaxWarning: name 'pir' is assigned to before global declaration
+  global pir
+./server.py:259: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  io.setup(RCpin, io.OUT)
+./server.py:248: SyntaxWarning: name 'pir' is assigned to before global declaration
+  global pir
+./server.py:248: SyntaxWarning: name 'pir' is assigned to before global declaration
+  global pir
+./server.py:259: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  io.setup(RCpin, io.OUT)
+./server.py:259: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  io.setup(RCpin, io.OUT)

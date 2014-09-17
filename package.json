@@ -1,0 +1,36 @@
+{
+  "name": "home",
+  "description": "home app for gpio",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://git.tomasharkema.nl/root/raspberrypi.git"
+  },
+  "dependencies": {
+    "request": "2.35.x",
+    "cookie": "0.1.x",
+    "express": "3.5.1",
+    "socket.io": "0.9.16",
+    "sys": "0.0.1",
+    "ssh2": "0.2.21",
+    "speakeasy": "1.0.3",
+    "gitlab-webhook": "0.2.1",
+    "node-localstorage": "0.3.4",
+    "net-ping": "1.1.10",
+    "connect-offline": "1.0.4",
+    "mongojs": "0.11.0",
+    "icalendar": "0.6.5",
+    "MD5": "1.2.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "1.14.x",
+    "frisby": "0.8.x",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.3.3",
+    "grunt-contrib-uglify": "~0.4.0"
+  },
+  "scripts": {
+    "test": "./test.sh"
+  }
+}

@@ -1,0 +1,116 @@
+  body{
+    background-color: black;
+  }
+  .well{
+    border:none;
+  }
+	.switch{
+		display: block;
+    box-shadow: inset 0px 0px 10px 0px black;
+    text-decoration: none;
+    padding:5px;
+  }
+  .device{
+    display: inline-block;
+    box-shadow: inset 0px 0px 10px 0px black;
+    text-decoration: none;
+    padding:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+	.switch h3, .device span, .misc h3{
+		color:black;
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+	}
+  .alarm, .trigger, .tempwrap, .cpu, .mem, .background-override{
+    display: inline-block;
+    box-shadow: inset 0px 0px 10px 0px black;
+    text-decoration: none;
+    padding:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color:black;
+  }
+  .navbar-brand{
+    color:white;
+  }
+  hr{
+    margin-top: 0px;
+  }
+  .panel{
+    background-color: #222;
+  }
+  .panel-default{
+    border:none!important;
+  }
+  .switches .well:last-child{
+    margin-bottom: 0px;
+  }
+  .devices .well:last-child{
+    margin-bottom: 0px;
+  }
+  .switches .col-md-3{
+    margin-bottom: 10px;
+  }
+  .set{
+    background-color: #222;
+    padding:10px;
+  }
+  h1, h2, h3, h4{
+    color:white;
+  }
+  .log{
+    color: white;
+  }
+  code{
+    width:100%;
+  }
+  #sleepStatus{
+    padding: 5px;
+  }
+  .time{
+    font-size: 30pt;
+  }
+  .table h3{
+    margin:0px;
+  }
+  .form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
