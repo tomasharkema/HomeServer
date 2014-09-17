@@ -8,7 +8,7 @@ var fileExists = fs.existsSync("./this.json");
 
 if (fileExists) {
 
-  var thisConfig = require("./this.json");
+   var thisConfig = require("./this.json");
 } else {
   var thisConfig = {
     "use": "ssh",
