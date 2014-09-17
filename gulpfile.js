@@ -6,7 +6,7 @@ var rename = require('gulp-rename');
 var nodemon = require('gulp-nodemon');
 var stylish = require('jshint-stylish');
 var ignore = require('gulp-ignore');
-
+var zip = require('gulp-zip');
 var clean = require('gulp-clean');
 
 var scripts = ['public/js/home.js', 'server.js'];
@@ -29,7 +29,14 @@ gulp.task('minify', function() {
     .pipe(gulp.dest("public/js/dist/"));
 });
 
+gulp.task('zip', function() {
+  return gulp.src('**')
+    .pipe(zip('release.zip'))
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('test', ['lint', 'minify']);
+gulp.task('deploy', ['minify', 'zip']);
 
 gulp.task('watch', function() {
   gulp.watch(scripts, ['test']);
