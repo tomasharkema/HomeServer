@@ -33,7 +33,8 @@
     "jshint-stylish": "0.4.x",
     "gulp-ignore": "1.2.x",
     "gulp-clean": "0.3.x",
-    "gulp-nodemon": "1.0.x"
+    "gulp-nodemon": "1.0.x",
+    "gulp-zip": "2.0.x"
   },
   "scripts": {
     "test": "gulp test"
