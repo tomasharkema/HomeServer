@@ -4,7 +4,7 @@ node_js:
 
 notifications:
 	email:
-		- info@tomasharkema.nl
+		- tomas.harkema.1994@gmail.com
 
 services:
 	- mongodb
