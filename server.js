@@ -1,14 +1,11 @@
-/*jslint indent:4 forin:true devel:true evil:true node:true*/
-/*jslint nomen:true plusplus:true maxlen: 200, unparam:true*/
-/*global __dirname: false, itemDisc:false */
-
+/* jshint strict:false */
 var fs = require('fs');
 
 var fileExists = fs.existsSync("./this.json");
 
 if (fileExists) {
 
-   var thisConfig = require("./this.json");
+  var thisConfig = require("./this.json");
 } else {
   var thisConfig = {
     "use": "ssh",
@@ -307,7 +304,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 
-app.use(express["static"].apply(null, [__dirname + '/public']));
+app.use(express.static.apply(null, [__dirname + '/public']));
 
 app.gitlab('/gitlab', {
   exec: './build.sh',
@@ -1366,7 +1363,9 @@ function networkDiscovery() {
 
             if (item.onSwitchOn !== undefined) {
               if (evalExecute) {
+                /*jshint -W061 */
                 eval(item.onSwitchOn);
+                /*jshint +W061 */
               }
               log.add("AUTOCOMMAND ON " + item.name, true);
             }
@@ -1416,7 +1415,9 @@ function networkDiscovery() {
 
             if (item.onSwitchOff !== undefined) {
               if (evalExecute) {
+                /*jshint -W061 */
                 eval(item.onSwitchOff);
+                /*jshint +W061 */
               }
               log.add("AUTOCOMMAND OFF " + item.name, true);
             }
