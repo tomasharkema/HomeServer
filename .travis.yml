@@ -8,3 +8,10 @@ notifications:
 
 services:
   - mongodb
+
+env:
+  global:
+    - "FTP_USER=deploy"
+    - "FTP_PASSWORD=deploy-shit"
+after_success:
+    "curl --ftp-create-dirs -T . -u $FTP_USER:$FTP_PASSWORD ftp://home.tomasharkema.nl/HomeServer"
