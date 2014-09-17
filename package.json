@@ -25,9 +25,15 @@
   "devDependencies": {
     "jasmine-node": "1.14.x",
     "frisby": "0.8.x",
-    "gulp": "latest"
+    "gulp": "latest",
+    "gulp-jshint": "latest",
+    "gulp-concat": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify": "latest",
+    "jshint-stylish": "latest",
+    "gulp-ignore": "latest"
   },
   "scripts": {
-    "test": "./test.sh"
+    "test": "gulp test"
   }
 }
