@@ -30,7 +30,10 @@
     "gulp-concat": "2.4.x",
     "gulp-rename": "1.2.x",
     "gulp-uglify": "1.0.x",
-    "jshint-stylish": "0.4.x"
+    "jshint-stylish": "0.4.x",
+    "gulp-ignore": "1.2.x",
+    "gulp-clean": "0.3.x",
+    "gulp-nodemon": "1.0.x"
   },
   "scripts": {
     "test": "gulp test"
